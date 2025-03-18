@@ -1,6 +1,6 @@
 import csv
 
-# Specify the input and output file names
+# Specify the input and output file names, edited to coorespond to the correct csv's
 input_file = 'security_incidents.csv'
 output_file = 'security_incidents_modified.csv'
 
@@ -9,7 +9,7 @@ with open(input_file, mode='r') as infile:
     reader = csv.reader(infile)
     data = list(reader)
 
-# Add a new column with a default value
+# Add a new column with the name status and default value of pending
 new_column_name = 'Status'
 default_value = 'Pending'
 
